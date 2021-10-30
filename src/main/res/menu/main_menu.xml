@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/profile"/>
+
+    <item
+            android:id="@+id/availability"
+            android:title="Availability"
+            android:icon="@drawable/availability"/>
+
+    <item
+            android:id="@+id/appointments"
+            android:title="Appointments"
+            android:icon="@drawable/appointments"/>
+
+
+
+</menu>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".ProfileFragment"
+                                                   android:id="@+id/frameLayout"
+                                                   android:background="@android:color/white">
+
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:id="@+id/scrollView" tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130pt"
+                    android:background="#6f3a9e">
+
+                <ImageButton
+                        android:src="@drawable/user"
+                        android:layout_width="153dp"
+                        android:layout_height="151dp" android:id="@+id/profilePicShow"
+                        android:scaleType="fitCenter" android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" android:layout_marginRight="128dp"
+                        android:layout_marginEnd="128dp" android:layout_alignParentStart="true"
+                        android:layout_marginLeft="128dp" android:layout_marginStart="128dp"
+                        android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="126dp" android:layout_marginTop="26dp"
+                        android:layout_alignParentTop="true"
+                />
+                <TextView
+                        android:text="@string/welcome_message"
+                        android:textSize="30sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/welcomeTxt"
+                        android:textColor="@android:color/white" android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" android:layout_marginRight="122dp"
+                        android:layout_marginEnd="122dp" android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="82dp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="422dp"
+                    android:layout_height="54dp"
+                    android:paddingTop="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                <ImageView
+                        android:src="@drawable/phone"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView4"
+                        android:scaleType="fitCenter"/>
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="10dp"
+                >
+                <TextView
+                        android:text="@string/barber_number"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="303dp"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="386dp"
+                        tools:layout_editor_absoluteX="71dp" android:id="@+id/numbertxt"/>
+
+                    <EditText
+                            android:text=""
+                            android:textSize="30sp"
+                            android:textColor="@android:color/black"
+                            android:paddingTop="5dp"
+                            android:layout_width="303dp"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="386dp"
+                            tools:layout_editor_absoluteX="71dp"
+                            android:visibility="invisible"
+                            android:maxLength="11"
+                            android:id="@+id/editNumber"/>
+                </RelativeLayout>
+
+<RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+
+>
+
+    <ImageButton
+            android:src="@drawable/profilesettings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/settings_button"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            />
+
+    <ImageButton
+            android:src="@drawable/save"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:id="@+id/save_button"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+</RelativeLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                <ImageView
+                        android:src="@drawable/location"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView5"
+                        android:scaleType="fitCenter"/>
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="10dp"
+                >
+                    <TextView
+                            android:text="@string/barber_postcode"
+                            android:textSize="30sp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="255dp"
+                            android:layout_height="wrap_content" tools:layout_editor_absoluteY="386dp"
+                            tools:layout_editor_absoluteX="71dp" android:id="@+id/postcodetxt"/>
+
+                    <EditText
+                            android:text=""
+                            android:textSize="30sp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="255dp"
+                            android:visibility="invisible"
+                            android:maxLength="8"
+                            android:layout_height="wrap_content" tools:layout_editor_absoluteY="386dp"
+                            tools:layout_editor_absoluteX="71dp" android:id="@+id/postcodeedit"/>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="10dp"
+                >
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:paddingTop="20sp"
+                            android:paddingBottom="20dp"
+                            android:paddingLeft="5sp"
+                            android:paddingRight="3sp"
+                            android:inputType="textMultiLine"
+                            android:text="@string/barber_des"
+                            android:ems="10"
+                            android:id="@+id/descriptiontxt"
+                            android:layout_weight="1"/>
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:paddingTop="20sp"
+                            android:paddingBottom="20dp"
+                            android:paddingLeft="5sp"
+                            android:paddingRight="3sp"
+                            android:inputType="textMultiLine"
+                            android:text=""
+                            android:ems="10"
+                            android:visibility="invisible"
+                            android:id="@+id/descriptionedit"
+                            android:layout_weight="1"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:paddingTop="40dp">
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp">
+
+                    <ImageButton
+                            android:src="@drawable/haircut1"
+                            android:layout_width="30dp"
+                            android:layout_height="120dp" android:id="@+id/haircut1" android:layout_weight="1"
+                            android:scaleType="fitXY" android:background="@android:color/transparent"
+                            android:layout_column="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                    />
+                    <ImageButton
+                            android:src="@drawable/haircut2"
+                            android:layout_width="30dp"
+                            android:layout_height="120dp" android:id="@+id/haircut2" android:layout_weight="1"
+                            android:scaleType="fitXY" android:background="@android:color/transparent"
+                            android:layout_column="2"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                    />
+                    <ImageButton
+                            android:src="@drawable/haircut3"
+                            android:layout_width="30dp"
+                            android:layout_height="120dp" android:id="@+id/haircut3" android:layout_weight="1"
+                            android:scaleType="fitXY" android:background="@android:color/transparent"
+                            android:layout_column="3"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                    />
+
+                </TableRow>
+
+
+                <TextView
+                        android:text="Tap and hold to edit image"
+                        android:textAlignment="center"
+                        android:paddingBottom="20dp"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView25"/>
+
+
+            </TableLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "83169180224",
+    "firebase_url": "https://firstgame-5d2b2.firebaseio.com",
+    "project_id": "firstgame-5d2b2",
+    "storage_bucket": "firstgame-5d2b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83169180224:android:32715fec302adf25",
+        "android_client_info": {
+          "package_name": "com.example.firstgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83169180224-jm7j9g4vqn55r840mij6efsquth62up9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firstgame",
+            "certificate_hash": "5be109013ba008e8c5ecc3e429f997ad24f925f1"
+          }
+        },
+        {
+          "client_id": "83169180224-qrmk7urhj0sdlje8vnkgrk4eb3pgr2vd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5pFuF_fItVpaiwWHrNhdHNI04FCtXYjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83169180224-qrmk7urhj0sdlje8vnkgrk4eb3pgr2vd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

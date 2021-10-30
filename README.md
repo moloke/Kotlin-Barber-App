@@ -1,0 +1,2 @@
+# Kotlin-Barber-App
+I chose to make a Barber booking application that takes the stress out of going to the hairdressers and getting a trim. My app is aimed at two main users, the barber, and the client. The barber will use the app to promote his/her business or service which they offer, in the hopes of getting clients to book them. The client will use the app to easily book appointments with their chosen barber and get their trim in the comfort of their home.
